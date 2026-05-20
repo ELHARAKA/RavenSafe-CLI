@@ -1,0 +1,24 @@
+{
+  "name": "ravensafe-cli",
+  "version": "1.0.0",
+  "description": "RavenSafe CLI for guided Ravencoin Ledger wallet operations.",
+  "main": "RavenSafe.js",
+  "bin": {
+    "ravensafe": "./RavenSafe.js"
+  },
+  "scripts": {
+    "start": "node RavenSafe.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ledgerhq/hw-app-btc": "^10.22.1",
+    "@ledgerhq/hw-transport-node-hid": "^6.33.2",
+    "axios": "^1.16.1",
+    "bitcoinjs-lib": "^7.0.1",
+    "commander": "^14.0.3",
+    "tiny-secp256k1": "^2.2.4"
+  }
+}
