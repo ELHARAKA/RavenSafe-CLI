@@ -120,11 +120,7 @@ RVN donations are optional:
 RYW4QozWJtmSipDAzXVJk2nyxRbY1fppbv
 ```
 
-Explorer:
-
-```text
-https://explorer.rvn.zelcore.io/address/RYW4QozWJtmSipDAzXVJk2nyxRbY1fppbv
-```
+Explorer: [https://explorer.rvn.zelcore.io/address/RYW4QozWJtmSipDAzXVJk2nyxRbY1fppbv](https://explorer.rvn.zelcore.io/address/RYW4QozWJtmSipDAzXVJk2nyxRbY1fppbv)
 
 ## Technical Reference
 
