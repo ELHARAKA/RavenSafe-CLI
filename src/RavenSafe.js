@@ -600,7 +600,7 @@ async function main() {
 
   program
     .name('RavenSafe')
-    .description('RavenSafe CLI. Run without a command for the guided Ravencoin Ledger wallet flow.');
+    .description('RavenSafe CLI. Run without a command to launch the guided wallet flow.');
 
   program
     .command('addresses')
@@ -625,7 +625,7 @@ async function main() {
 
   program
     .command('send')
-    .description('Prepare a dry-run RVN send plan; with --sign, sign only and never broadcast')
+    .description('Advanced: prepare a dry-run RVN send plan; with --sign, sign only and do not broadcast.')
     .option('--from-chain <receiving|change>', 'source address chain', 'receiving')
     .requiredOption('--from-index <number>', 'source address index')
     .requiredOption('--to <RVN_ADDRESS>', 'destination RVN address')
@@ -682,7 +682,7 @@ async function main() {
 
   program
     .command('broadcast')
-    .description('Manually broadcast a signed raw RVN transaction after BROADCAST confirmation')
+    .description('Advanced: manually broadcast a signed raw RVN transaction after BROADCAST confirmation.')
     .option('--rawtx <SIGNED_RAW_TX_HEX>', 'signed raw transaction hex')
     .option('--file <path>', 'file containing signed raw transaction hex')
     .action(async options => {
