@@ -1,18 +1,49 @@
 {
   "name": "ravensafe-cli",
   "version": "1.0.0",
-  "description": "RavenSafe CLI for guided Ravencoin Ledger wallet operations.",
+  "description": "Guided Ravencoin Ledger wallet operations from the command line.",
   "main": "RavenSafe.js",
   "bin": {
-    "ravensafe": "./RavenSafe.js"
+    "ravensafe": "RavenSafe.js",
+    "ravensafe-cli": "RavenSafe.js"
   },
+  "files": [
+    "RavenSafe.js",
+    "cli.js",
+    "src/",
+    "tools/",
+    "README.md",
+    "Docs.md",
+    "LICENSE",
+    "assets/ravensafe-cli-brand.png"
+  ],
   "scripts": {
     "start": "node RavenSafe.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check": "node --check RavenSafe.js && node --check cli.js && find src tools -name '*.js' -print0 | xargs -0 -n 1 node --check",
+    "test": "npm run check",
+    "pack:dry-run": "npm pack --dry-run"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELHARAKA/RavenSafe-CLI.git"
+  },
+  "keywords": [
+    "ravencoin",
+    "rvn",
+    "ledger",
+    "cli",
+    "wallet",
+    "hardware-wallet"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ELHARAKA/RavenSafe-CLI/issues"
+  },
+  "homepage": "https://github.com/ELHARAKA/RavenSafe-CLI#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@ledgerhq/hw-app-btc": "^10.22.1",
     "@ledgerhq/hw-transport-node-hid": "^6.33.2",
